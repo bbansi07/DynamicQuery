@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3D9DDDA61CF9DF3C001491AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DDDA51CF9DF3C001491AE /* AppDelegate.swift */; };
-		3D9DDDA81CF9DF3C001491AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DDDA71CF9DF3C001491AE /* ViewController.swift */; };
+		3D9DDDA81CF9DF3C001491AE /* SQLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DDDA71CF9DF3C001491AE /* SQLViewController.swift */; };
 		3D9DDDAB1CF9DF3C001491AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DDDA91CF9DF3C001491AE /* Main.storyboard */; };
 		3D9DDDAD1CF9DF3C001491AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DDDAC1CF9DF3C001491AE /* Assets.xcassets */; };
 		3D9DDDB01CF9DF3C001491AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DDDAE1CF9DF3C001491AE /* LaunchScreen.storyboard */; };
 		3D9DDDBB1CF9DF3C001491AE /* SQLiteWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DDDBA1CF9DF3C001491AE /* SQLiteWrapperTests.swift */; };
+		3D9DDDC61CFA0CFA001491AE /* SQLDataIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DDDC51CFA0CFA001491AE /* SQLDataIO.swift */; };
+		3D9DDDC81CFA0EF4001491AE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DDDC71CFA0EF4001491AE /* libsqlite3.tbd */; };
+		DC6AB4E41E683DDE0023CEAB /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6AB4E31E683DDD0023CEAB /* DetailVC.swift */; };
+		DC933C861E694B2C009FFD16 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC933C851E694B2C009FFD16 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,7 @@
 /* Begin PBXFileReference section */
 		3D9DDDA21CF9DF3C001491AE /* SQLiteWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9DDDA51CF9DF3C001491AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D9DDDA71CF9DF3C001491AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D9DDDA71CF9DF3C001491AE /* SQLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLViewController.swift; sourceTree = "<group>"; };
 		3D9DDDAA1CF9DF3C001491AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D9DDDAC1CF9DF3C001491AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9DDDAF1CF9DF3C001491AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,11 @@
 		3D9DDDB61CF9DF3C001491AE /* SQLiteWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9DDDBA1CF9DF3C001491AE /* SQLiteWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteWrapperTests.swift; sourceTree = "<group>"; };
 		3D9DDDBC1CF9DF3C001491AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9DDDC51CFA0CFA001491AE /* SQLDataIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLDataIO.swift; sourceTree = "<group>"; };
+		3D9DDDC71CFA0EF4001491AE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3D9DDDCA1CFA22AE001491AE /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		DC6AB4E31E683DDD0023CEAB /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		DC933C851E694B2C009FFD16 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9DDDC81CFA0EF4001491AE /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,11 +88,16 @@
 			isa = PBXGroup;
 			children = (
 				3D9DDDA51CF9DF3C001491AE /* AppDelegate.swift */,
-				3D9DDDA71CF9DF3C001491AE /* ViewController.swift */,
+				3D9DDDA71CF9DF3C001491AE /* SQLViewController.swift */,
+				3D9DDDC51CFA0CFA001491AE /* SQLDataIO.swift */,
+				3D9DDDCA1CFA22AE001491AE /* BridgingHeader.h */,
 				3D9DDDA91CF9DF3C001491AE /* Main.storyboard */,
 				3D9DDDAC1CF9DF3C001491AE /* Assets.xcassets */,
 				3D9DDDAE1CF9DF3C001491AE /* LaunchScreen.storyboard */,
 				3D9DDDB11CF9DF3C001491AE /* Info.plist */,
+				DC6AB4E31E683DDD0023CEAB /* DetailVC.swift */,
+				3D9DDDC91CFA0F4F001491AE /* Frameworks */,
+				DC933C851E694B2C009FFD16 /* UserModel.swift */,
 			);
 			path = SQLiteWrapper;
 			sourceTree = "<group>";
@@ -94,6 +109,14 @@
 				3D9DDDBC1CF9DF3C001491AE /* Info.plist */,
 			);
 			path = SQLiteWrapperTests;
+			sourceTree = "<group>";
+		};
+		3D9DDDC91CFA0F4F001491AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9DDDC71CFA0EF4001491AE /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,14 +164,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Cindy Oakes";
 				TargetAttributes = {
 					3D9DDDA11CF9DF3C001491AE = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					3D9DDDB51CF9DF3C001491AE = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3D9DDDA11CF9DF3C001491AE;
 					};
 				};
@@ -197,8 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9DDDA81CF9DF3C001491AE /* ViewController.swift in Sources */,
+				3D9DDDA81CF9DF3C001491AE /* SQLViewController.swift in Sources */,
+				DC6AB4E41E683DDE0023CEAB /* DetailVC.swift in Sources */,
 				3D9DDDA61CF9DF3C001491AE /* AppDelegate.swift in Sources */,
+				DC933C861E694B2C009FFD16 /* UserModel.swift in Sources */,
+				3D9DDDC61CFA0CFA001491AE /* SQLDataIO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +282,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -300,8 +330,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -320,6 +352,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -331,8 +364,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQLiteWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cindyoakes.SQLiteWrapper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intec.cm.SQLiteWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SQLiteWrapper/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -342,8 +377,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQLiteWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cindyoakes.SQLiteWrapper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intec.cm.SQLiteWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SQLiteWrapper/BridgingHeader.h;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -355,6 +393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cindyoakes.SQLiteWrapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SQLiteWrapper.app/SQLiteWrapper";
 			};
 			name = Debug;
@@ -367,6 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cindyoakes.SQLiteWrapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SQLiteWrapper.app/SQLiteWrapper";
 			};
 			name = Release;
@@ -390,6 +430,7 @@
 				3D9DDDC11CF9DF3C001491AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D9DDDC21CF9DF3C001491AE /* Build configuration list for PBXNativeTarget "SQLiteWrapperTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +439,7 @@
 				3D9DDDC41CF9DF3C001491AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
